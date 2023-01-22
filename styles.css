@@ -1,0 +1,72 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  border: 10px solid cornflowerblue;
+  background-color: white;
+  width: 350px;
+  font-family: Verdana;
+  font-size: 28px;
+  gap: 5px;
+}
+
+.sb_head {
+  color: gainsboro;
+  text-align: center;
+  font-family: Verdana;
+  font-size: 36px;
+}
+
+.sb_menuitem {
+  align-items: center;
+}
+
+div.sb_menuitem {
+  display: flex;
+  flex-direction: row;
+  flex-basis: content;
+  text-align: left;
+  padding: 8px;
+}
+
+div.sb_menuitem:hover {
+  background-color: gainsboro;
+}
+
+div.sb_menuitem a:hover {
+  color: blue;
+}
+
+div.sb_menuitem:hover a:not(:hover) {
+  color: blue;
+}
+
+a.sb_menuitem {
+  text-decoration: none;
+}
+
+img.sb_menuitem {
+  width: 30px;
+  height: 30px;
+}
+
+.sb_thumbnail {
+  display: flex;
+  flex-direction: column;
+}
+
+img.sb_thumbnail {
+  align-self: center;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  max-width: 120px;
+  max-height: 120px;
+  flex-basis: min-content;
+}
+
+span.sb_thumbnail {
+  align-self: center;
+  font-weight: bold;
+  color: red;
+  flex-basis: min-content;
+}
